@@ -78,29 +78,47 @@ body {
   width: 100%;
   object-fit: cover;
 }
+.social-icons a {
+  color: #880ed4;
+  padding-right: 5px;
+}
+
 .social-icons {
   display: flex;
   justify-content: left;
-  margin-top: 40px;
-}
-
-.social-icon {
-  display: inline-flex;
-  justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #fff;
-  margin-right: 10px; /* add margin-right to create space */
+  margin-right: 10px;
+  margin-top: 10px;
   font-size: 20px;
   color: #880ed4;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.social-icon:hover {
-  background-color: #880ed4;
+
+.social-icons:not(:last-child) {
+  margin-right: 10px;
+}
+
+.twitter-icon:hover {
   color: #fff;
+  border-radius: 50%;
+  background-color: #880ed4;
+}
+
+.linkedin-icon:hover {
+  color: #fff;
+  border-radius: 50%;
+  background-color: #880ed4;
+}
+
+.github-icon:hover {
+  color: #fff;
+  border-radius: 50%;
+  background-color: #880ed4;
 }
 
 
