@@ -1,3 +1,4 @@
+/* Set default values for all elements */
 * {
   margin: 0;
   padding: 0;
@@ -5,121 +6,196 @@
   box-sizing: border-box;
 }
 
+/* Set background color and font color for body element */
 body {
-  background-color: #880ed4;
-  color: #fff;
+  background-color: #fff;
+  color: black;
 }
 
+/* Set background color for navbar toggler icon */
+.navbar-toggler-icon {
+  background-color: green;
+}
+
+/* Set styles for the navbar element */
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  background-color: #880ed4;
+  position: fixed; /* Position the navbar element */
+  top: 0; /* Place the navbar at the top of the page */
+  width: 100%; /* Set the width of the navbar to 100% */
+  z-index: 999; /* Set the z-index of the navbar to 999 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box-shadow to the navbar */
+  padding: 20px; /* Add padding to the navbar */
+  background-color: black; /* Set the background color of the navbar */
 }
 
-
+/* Set styles for the navbar brand element */
 .navbar-brand {
-  font-size: 30px;
-  font-weight: 700;
-  color: white !important;
+  font-size: 30px; /* Set the font size of the navbar brand */
+  font-weight: 700; /* Set the font weight of the navbar brand */
+  color: rgba(36, 231, 36, 0.897) !important; /* Set the color of the navbar brand */
 }
 
+/* Set styles for the navbar links */
 .nav-link {
-  font-size: 20px;
-  font-weight: 500;
-  margin-left: 20px;
-  color: white !important;
+  font-size: 20px; /* Set the font size of the navbar links */
+  font-weight: 500; /* Set the font weight of the navbar links */
+  margin-left: 20px; /* Add margin to the left of the navbar links */
+  color: rgba(36, 231, 36, 0.897) !important; /* Set the color of the navbar links */
 }
 
+/* Set styles for the hover effect on navbar links */
 .nav-link:hover {
-  color: var(--secondary-color);
+  color: #fff; /* Set the color of the navbar links on hover */
+  text-decoration: underline; /* Add an underline to the navbar links on hover */
 }
 
+/* Set styles for the navbar navigation links aligned to the right */
 .navbar-nav.ml-auto {
-  margin-left: auto;
+  margin-left: auto; /* Align the navbar navigation links to the right */
 }
+/* Styles for the home section */
 
 #home {
-  background-size: cover;
-  background-color: transparent;
-  height: 100vh;
+  background-size: cover; /* set the background image size to cover the entire section */
+  background-color: black; /* fallback background color in case the image fails to load */
+  height: 100vh; /* set the height of the section to 100% of the viewport height */
 }
 
 #home h1,
 #home p {
-  color: #880ed4;
+  color: #fff; /* set the color of the text to white */
+}
+
+#home h1 span{
+  color: rgba(36, 231, 36, 0.897); /* set the color of the span element within the h1 tag to a green shade */
+}
+#home p span{
+  color: rgba(36, 231, 36, 0.897); /* set the color of the span element within the p tag to a green shade */
 }
 
 #home p{
-  color: #880ed4;
-  font-size: 24px;
+  color: #fff; /* set the color of the text within the p tag to white */
+  font-size: 24px; /* set the font size of the text within the p tag to 24 pixels */
 }
 
 .image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  display: flex; /* use flexbox to align the content of the container */
+  justify-content: center; /* horizontally center the content within the container */
+  align-items: center; /* vertically center the content within the container */
+  height: 100%; /* set the height of the container to 100% */
 }
 
 .round-shape {
-  height: 80vh;
-  width: 150%;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #880ed4;
+  height: 80vh; /* set the height of the container to 80% of the viewport height */
+  width: 150%; /* set the width of the container to 150% of its parent container */
+  border-radius: 50%; /* make the container circular */
+  overflow: hidden; /* hide any content that overflows the container */
+  background-color: rgba(3, 22, 3, 0.897); /* set the background color of the container to a green shade */
 }
 
 .round-shape img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.social-icons a {
-  color: #880ed4;
+  height: 100%; /* set the height of the image to 100% of its parent container */
+  width: 100%; /* set the width of the image to 100% of its parent container */
+  object-fit: cover; /* scale the image to cover the entire container while preserving its aspect ratio */
+
+}.social-icons a {
+  color: rgba(36, 231, 36, 0.897)  !important; /* Sets color of social icon links */
   padding-right: 5px;
 }
 
 .social-icons {
-  display: flex;
-  justify-content: left;
-  align-items: center;
+  display: flex; /* Displays social icons in a row */
+  justify-content: left; /* Aligns social icons to the left */
+  align-items: center; /* Aligns social icons vertically */
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background-color: #fff;
+  border-radius: 50%; /* Makes social icons round */
   margin-right: 10px;
   margin-top: 10px;
   font-size: 20px;
-  color: #880ed4;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Adds transition effect to social icons */
 }
-
 
 .social-icons:not(:last-child) {
   margin-right: 10px;
 }
 
-.twitter-icon:hover {
-  color: #fff;
-  border-radius: 50%;
-  background-color: #880ed4;
+#about {
+  background-color: whitesmoke;
+  padding: 10px 0;
 }
 
-.linkedin-icon:hover {
-  color: #fff;
-  border-radius: 50%;
-  background-color: #880ed4;
+#about .container {
+  display: flex; /* Displays content of about section in a row */
+  align-items: center; /* Aligns content vertically */
+  justify-content: space-between; /* Adds space between content items */
 }
 
-.github-icon:hover {
-  color: #fff;
-  border-radius: 50%;
-  background-color: #880ed4;
+#about .image-container {
+  max-width: 400px;
 }
+
+#about .image-container img {
+  width: 100%; /* Sets width of about section image to 100% */
+  height: auto; /* Sets height of about section image to auto */
+}
+
+#about h2{
+  color: green; /* Sets color of about section heading */
+}
+
+#about p{
+  color: green; /* Sets color of about section paragraph */
+  font-size: 18px; /* Sets font size of about section paragraph */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -127,7 +203,7 @@ body {
   /* Add padding to content area to push it below the navbar */
   #home {
     padding-top: 80px;
-    margin-top: 80px;
+    margin-top: 30px;
   }
 
   /* Navbar styles */
@@ -168,3 +244,11 @@ body {
   text-align: center;
   }
 }
+
+@media (max-width: 768px) {
+  .social-icons {
+    position: relative;
+    top: 20px;
+  }
+}
+
