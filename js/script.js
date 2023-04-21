@@ -11,3 +11,26 @@ document.addEventListener('click', function(event) {
     document.querySelector('.navbar-collapse').classList.remove('show');
   }
 });
+
+
+// Get the button element
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Add a scroll event listener to the window
+window.addEventListener("scroll", function() {
+  // If the user has scrolled down 20% of the page height, show the button
+  if (window.pageYOffset > (document.documentElement.scrollHeight * 0.2)) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+});
+
+// Define the scrollToTop function
+function scrollToTop() {
+  // Scroll to the top of the page with smooth animation
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}

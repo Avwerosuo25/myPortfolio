@@ -21,6 +21,7 @@ body {
 .navbar {
   position: fixed; /* Position the navbar element */
   top: 0; /* Place the navbar at the top of the page */
+  height: 10%;
   width: 100%; /* Set the width of the navbar to 100% */
   z-index: 999; /* Set the z-index of the navbar to 999 */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box-shadow to the navbar */
@@ -90,7 +91,7 @@ body {
   width: 150%; /* set the width of the container to 150% of its parent container */
   border-radius: 50%; /* make the container circular */
   overflow: hidden; /* hide any content that overflows the container */
-  background-color: rgba(3, 22, 3, 0.897); /* set the background color of the container to a green shade */
+  background-color: black; /* set the background color of the container to a green shade */
 }
 
 .round-shape img {
@@ -149,8 +150,65 @@ body {
   color: green; /* Sets color of about section paragraph */
   font-size: 18px; /* Sets font size of about section paragraph */
 }
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 50px 15px;
+}
+
+.service {
+  text-align: center;
+  padding: 30px;
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service i {
+  color: green;
+  margin-bottom: 20px;
+}
+
+.container h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: green;
+}
+
+.service h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: green;
+}
+
+.service p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: green;
+}
 
 
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#scrollToTopBtn:hover {
+  background-color: green;
+  color: black;
+}
 
 
 
