@@ -175,6 +175,11 @@ body {
   color: green;
 }
 
+.service:hover {
+  background-color: white;
+}
+
+
 .service h4 {
   font-weight: bold;
   margin-bottom: 20px;
@@ -211,6 +216,236 @@ body {
 }
 
 
+#projects {
+  background: black;
+  padding: 50px 0;
+}
+
+#projects h2 {
+  text-align: center;
+  color: green;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+#projects p {
+  text-align: left;
+  color: green;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.project {
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  transition: transform .2s ease-out;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.project-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  color: green;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+}
+
+.project:hover .project-info {
+  opacity: 1;
+}
+
+.project-info h3 {
+  margin-top: 0;
+}
+
+.project-info a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.project-info a:hover {
+  color: #72be6f;
+}
+
+.button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: darkgreen;
+}
+
+#contact {
+  background-color: whitesmoke;
+  padding: 100px 0;
+}
+
+.contact-info h2, .contact-form h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.contact-list li i {
+  margin-right: 10px;
+  color: whitesmoke;
+  font-size: 24px;
+}
+
+.contact-list li a i {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form {
+  background-color: whitesmoke;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.contact-form textarea {
+  height: 200px;
+}
+
+.contact-form button[type="submit"] {
+  
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #fff;
+  color: #fbb710;
+  border: 1px solid #fbb710;
+}
+
+.contact-form p.success-message {
+  color: #3c763d;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.contact-form p.error-message {
+  color: #a94442;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: black;
+  padding: 50px 0;
+}
+
+footer h3 {
+  font-size: 24px;
+  color: green;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: green;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: whitesmoke;
+}
+
+footer p {
+  font-size: 16px;
+  color: green;
+  margin-bottom: 20px;
+}
+
+footer .bg-green {
+  background-color: green;
+  padding: 10px 0;
+}
+
+footer .text {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
 
 
 
